@@ -1,28 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Daniela Garcia</title>
-<style>
+  <title>Daniela Garcia</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:700|Playfair+Display" rel="stylesheet">
+  <style>
+
+  .profilepic {
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 128px;
+    margin: 30px;
+  }
+
   .socials {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
   }
 
   .name {
-    display: flex;
-    align-items: center;
-  }
+    text-align:center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #51241f;
+    font-family: 'PT Sans', sans-serif;
+    
+}
 
   .links {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    margin-top: 10px;
   }
-</style>
+
+  .socials a {
+    margin: 20px;
+  }
+
+  </style>
 </head>
 <body>
-  <div class="profile pic">
-    <img src="" />
+  <div class="profilepic">
+    <img src="/pictures/profilepic.png" alt="Bonsai tree as profile picture" class="banner"/>
   </div>
 
   <div class="name">
@@ -30,8 +58,9 @@
   </div>
   
   <div class="socials">
-    <a><img srs="" target="_blank" />GitHub</a>
-    <a><img srs="" target="_blank"/>LinkedIn</a>
+    <a><i class="fa-brands fa-github-alt" style="color: #51241f;"></i></a>
+    <a><i class="fa-brands fa-linkedin" style="color: #51241f;"></i></a>
+    <a><i class="fa-brands fa-instagram" style="color: #51241f;"></i></i></a>
   </div>
 
   <div class="links">
