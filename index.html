@@ -10,6 +10,7 @@
     .background {
       padding-top: 40px;
       padding-bottom: 40px;
+      display: flex;
       justify-content: center;
       background: linear-gradient(90deg, #6b4f3b, #553C2A, #ffc0ad);
       background-size: 300% 300%;
@@ -35,7 +36,7 @@
       flex-direction: column;
       align-items: center;
       gap: 30px;
-      flex-grow: 1px;
+      flex-wrap: 1;
     }
 
     .profilepic {
@@ -51,19 +52,19 @@
       border: 7px solid #51241f;
     }
 
+    .name {
+      text-align:center;
+      font-size: 25px;
+      color: #51241f;
+      font-family: 'PT Sans', sans-serif;
+    }
+
     .socials {
       display: flex;
       justify-content: center;
       flex-direction: row;
       gap: 80px;
     }
-
-    .name {
-      text-align:center;
-      font-size: 25px;
-      color: #51241f;
-      font-family: 'PT Sans', sans-serif;
-  }
 
     .link {
       display: flex;
@@ -73,7 +74,7 @@
       background: #deac9d;
       padding: 10px;
       border-radius: 60px;
-      box-shadow: 7px 7px 3px 0px rgb(130, 106, 106);
+      box-shadow: 2px 2px 10px 0px rgb(130, 106, 106, .6);
     }
 
     .link img {
@@ -84,13 +85,13 @@
     }
 
     .link-text {
-      text-align: center;
       text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
       color: #51241f;
-      font-family: 'PT Sans', sans-serif;
+      font-family: 'Varela Round', sans-serif;
       font-size: 15px;
-      flex-grow: 1px;
-   }
+    }
 
   </style>
 </head>
@@ -130,9 +131,8 @@
 
     <div class="link">
       <img src="/pictures/sky.png" alt="Image of a sunset"/>
-      <a href="https://zenhabits.net/simple-day/" class="link-text" target="_blank">Simple Habits to Have a Great Day</a>
+      <a class="link-text" href="https://zenhabits.net/simple-day/" target="_blank">Simple Habits to Have a Great Day</a>
     </div>
-    
   </div>
 
   </div>
