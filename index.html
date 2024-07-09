@@ -4,70 +4,137 @@
   <title>Daniela Garcia</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:700|Playfair+Display" rel="stylesheet">
+  <meta charset="utf-8">
   <style>
 
-  .profilepic {
-    display: flex;
-    justify-content: center;
+    .background {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      justify-content: center;
+      background: linear-gradient(90deg, #6b4f3b, #553C2A, #ffc0ad);
+      background-size: 300% 300%;
+      animation: gradient 4s alternate infinite;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0%;
+      }
+      100% {
+        background-position: 100%;
+      }
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      flex-grow: 1px;
+    }
+
+    .profilepic {
+      display: flex;
+      justify-content: center;
+    }
+
+    .banner {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 128px;
+      border: 7px solid #51241f;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      gap: 80px;
+    }
+
+    .name {
+      text-align:center;
+      font-size: 25px;
+      color: #51241f;
+      font-family: 'PT Sans', sans-serif;
   }
 
-  .banner {
-    width: 128px;
-    height: 128px;
-    object-fit: cover;
-    border-radius: 128px;
-    margin: 30px;
-  }
+    .link {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      width: 500px;
+      background: #deac9d;
+      padding: 10px;
+      border-radius: 60px;
+      box-shadow: 7px 7px 3px 0px rgb(130, 106, 106);
+    }
 
-  .socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    .link img {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
 
-  .name {
-    text-align:center;
-    font-size: 25px;
-    margin-bottom: 10px;
-    color: #51241f;
-    font-family: 'PT Sans', sans-serif;
-    
-}
-
-  .links {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .socials a {
-    margin: 20px;
-  }
+    .link-text {
+      text-align: center;
+      text-decoration: none;
+      color: #51241f;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 15px;
+      flex-grow: 1px;
+   }
 
   </style>
 </head>
+
 <body>
-  <div class="profilepic">
-    <img src="/pictures/profilepic.png" alt="Bonsai tree as profile picture" class="banner"/>
-  </div>
+  <div class="background">
 
-  <div class="name">
-    <span><b>Daniela Garcia</b></span>
-  </div>
+  <div class="items">
+    <div class="profilepic">
+      <img src="/pictures/profilepic.png" alt="Bonsai tree as profile picture" class="banner"/>
+    </div>
+
+    <div class="name">
+      <b>Daniela Garcia</b>
+    </div>
   
-  <div class="socials">
-    <a><i class="fa-brands fa-github-alt" style="color: #51241f;"></i></a>
-    <a><i class="fa-brands fa-linkedin" style="color: #51241f;"></i></a>
-    <a><i class="fa-brands fa-instagram" style="color: #51241f;"></i></i></a>
+    <div class="socials">
+      <a href="https://github.com/dgarcia13-99" target="_blank"><i class="fa-brands fa-github-alt" style="color: #51241f;"></i></a>
+      <a href="https://www.linkedin.com/in/daniela-garcia-1b4310294/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #51241f;"></i></a>
+      <a href="https://www.instagram.com/dani113.99/" target="_blank"><i class="fa-brands fa-instagram" style="color: #51241f;"></i></i></a>
+    </div>
+
+    <div class="link">
+      <img src="/pictures/ikigai.png" alt="Image of a book titled 'Ikigai' " />
+      <a class="link-text" href="https://tinybuddha.com/blog/how-to-find-your-ikigai-and-more-purpose-and-joy/" target="_blank">Finding Purpose and Joy</a>
+    </div>
+
+    <div class="link">
+      <img src="/pictures/determination.png" alt="Image of a wooden block that says 'Why Not Try'"/>
+      <a class="link-text" href="https://hbr.org/2018/11/how-to-keep-working-when-youre-just-not-feeling-it" target="_blank">Discipline and Determination: Advice on How to Keep Going</a>
+    </div>
+
+    <div class="link">
+      <img src="/pictures/walking.png" alt="A person walking through a forest"/>
+      <a class="link-text" href="https://www.calm.com/blog/walking-for-mental-health" target="_blank">Benefits of Walking</a>
+    </div>
+
+    <div class="link">
+      <img src="/pictures/sky.png" alt="Image of a sunset"/>
+      <a href="https://zenhabits.net/simple-day/" class="link-text" target="_blank">Simple Habits to Have a Great Day</a>
+    </div>
+    
   </div>
 
-  <div class="links">
-    <a><div><img>Link 1</div></a>
-    <a><div><img>Link2</div></a>
-    <a><div><img>Link3</div></a>
-    <a><div><img>Link4</div></a>
   </div>
 </body>
 
